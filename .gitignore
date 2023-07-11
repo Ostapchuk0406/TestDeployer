@@ -9,3 +9,5 @@
 /vendor/
 ./composer.phar
 ###< symfony/framework-bundle ###
+/docker/local/.ssh/
+/docker/local/ssh/
