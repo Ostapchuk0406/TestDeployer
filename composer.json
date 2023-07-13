@@ -16,6 +16,7 @@
         "symfony/dotenv": "5.4.*",
         "symfony/flex": "^1.17|^2",
         "symfony/framework-bundle": "5.4.*",
+        "symfony/maker-bundle": "^1.43",
         "symfony/runtime": "5.4.*",
         "symfony/yaml": "5.4.*"
     },
@@ -69,7 +70,6 @@
         }
     },
     "require-dev": {
-        "deployer/deployer": "^6.7",
-        "symfony/maker-bundle": "*"
+        "deployer/deployer": "^6.7"
     }
 }

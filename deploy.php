@@ -25,9 +25,6 @@ set('writable_mode', 'chmod');
 
 // Hosts
 
-//host('project.com')
-//    ->set('deploy_path', '~/{{application}}');
-
 host('prod')
     ->hostname('testdeployer-production-1')
     ->user('root')
@@ -39,6 +36,11 @@ host('prod')
 task('build', function () {
     run('cd {{release_path}} && build');
 });
+
+//task('my_task', function () {
+//    $var = get('bin/composer');
+//    writeln("var: " . $var);
+//});
 
 // [Optional] if deploy fails automatically unlock.
 after('deploy:failed', 'deploy:unlock');
