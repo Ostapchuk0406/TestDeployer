@@ -13,6 +13,8 @@ RUN docker-php-ext-install pdo_mysql zip
 
 COPY ./docker/local/php.ini /usr/local/etc/php/php.ini
 
+RUN echo "alias dep='/app/vendor/bin/dep'" >> /root/.bashrc
+
 ENTRYPOINT ["tail"]
 CMD ["-f","/dev/null"]
 
