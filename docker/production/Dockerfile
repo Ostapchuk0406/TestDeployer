@@ -8,7 +8,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 COPY ./docker/production/php.ini /usr/local/etc/php/php.ini
 
 RUN apt update && \
-    apt-get install -y git libzip-dev openssh-server  
+    apt-get install -y git libzip-dev unzip openssh-server
 RUN docker-php-ext-install pdo_mysql zip
 
 RUN mkdir /var/run/sshd
